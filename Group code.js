@@ -174,7 +174,7 @@ class ImageSegment {
     let dynamicXOffset = 0;
     let dynamicYOffset = 0;
 
-    // Check if color is white (255, 255, 255); white blocks do not move
+    // Check if color is white (240, 240, 235); white blocks do not move
     if (!(red(this.srcImgSegColour) === 240 && green(this.srcImgSegColour) === 240 && blue(this.srcImgSegColour) === 235)) {
       dynamicXOffset = this.xOffset + 10 * sin(time + this.rowPostion); // x-direction offset
       dynamicYOffset = this.yOffset + 10 * cos(time + this.columnPosition); // y-direction offset
