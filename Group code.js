@@ -24,7 +24,7 @@ function preload() {
 function setup() {
   //make the canvas the same size as the image using its properties
   createCanvas(windowWidth, windowHeight);
-  //calculate the aspect ratio of the image - this will never change so we only need to do it once
+  //calculate the aspect ratio of the image- this will never change so we only need to do it once
   imgDrwPrps.aspect = img.width / img.height;
   
   //calculate the draw properties of the image using the function made
